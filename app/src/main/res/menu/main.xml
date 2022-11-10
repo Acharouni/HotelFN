@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item android:id="@+id/nameUser"
+        android:orderInCategory="100"
+        android:visible="false"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/idLogin"
+        android:title="Login"
+        android:visible="true"
+        android:icon="@drawable/ic_baseline_login_24"
+        app:showAsAction="ifRoom" />
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings_Profil"
+        android:orderInCategory="100"
+        android:visible="false"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_baseline_logout_24"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:visible="false"
+        android:title="Log out" />
+
+
+</menu>

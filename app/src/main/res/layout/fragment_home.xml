@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/baground"
+    tools:context=".ui.home.HomeFragment">
+
+
+    <TextView
+        android:id="@+id/text_grand"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="86dp"
+        android:fontFamily='@font/pacifico'
+        android:text="Grande Hotel"
+        android:textColor="#FEFEFE"
+        android:textSize="56sp"
+        app:layout_constraintBottom_toTopOf="@+id/imgRoom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imgabout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="65dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:src="@drawable/about"
+        app:layout_constraintBottom_toBottomOf="@+id/imglocal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imglocal"
+        app:layout_constraintTop_toTopOf="@+id/imglocal" />
+
+    <ImageView
+        android:id="@+id/imgdiner"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="114dp"
+        android:layout_marginBottom="52dp"
+        android:src="@drawable/room_service"
+        app:layout_constraintBottom_toTopOf="@+id/imglocal"
+        app:layout_constraintEnd_toStartOf="@+id/imgcontact"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgRoom" />
+
+    <ImageView
+        android:id="@+id/imgcontact"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="65dp"
+        android:src="@drawable/contact"
+        app:layout_constraintBottom_toBottomOf="@+id/imgdiner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgdiner"
+        app:layout_constraintTop_toTopOf="@+id/imgdiner" />
+
+    <ImageView
+        android:id="@+id/imglocal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="114dp"
+        android:layout_marginBottom="78dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:src="@drawable/location"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgabout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgdiner" />
+
+    <ImageView
+        android:id="@+id/imggallery"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="65dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:src="@drawable/gallery"
+        app:layout_constraintBottom_toBottomOf="@+id/imgRoom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgRoom"
+        app:layout_constraintTop_toTopOf="@+id/imgRoom" />
+
+    <ImageView
+        android:id="@+id/imgRoom"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="114dp"
+        android:layout_marginBottom="63dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:src="@drawable/room"
+        app:layout_constraintBottom_toTopOf="@+id/imgdiner"
+        app:layout_constraintEnd_toStartOf="@+id/imggallery"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_grand" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/baground"
+    tools:context=".reservation">
+
+
+    <ImageView
+        android:id="@+id/reture2"
+        android:layout_width="33dp"
+        android:layout_height="37dp"
+        app:srcCompat="@drawable/retour"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/reservation"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginTop="20dp"
+        android:text="RESERVATION"
+        android:textAlignment="center"
+        android:fontFamily="@font/chunk"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/Fname"
+
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@+id/reservation"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/texte_drawable"
+        android:ems="10"
+        android:hint="   First Name"
+        android:inputType="textPersonName"
+
+        android:textColor="@color/teal_700"
+        android:textColorHint="@color/white" />
+    <EditText
+        android:id="@+id/Lname"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@+id/Fname"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/white"
+        android:textColor="@color/teal_700"
+        android:hint="  Last Name"
+        android:background="@drawable/texte_drawable"/>
+
+    <EditText
+        android:id="@+id/room"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@+id/Lname"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/texte_drawable"
+        android:ems="10"
+        android:hint="  Name Of Room"
+        android:inputType="textPersonName"
+        android:textColor="@color/teal_700"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/adult"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@+id/room"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/texte_drawable"
+        android:ems="10"
+        android:textColor="#FFFFFFFF"
+        android:hint="  Number Of Adult"
+        android:inputType="number"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/child"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@+id/adult"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:textColor="#FFFFFFFF"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/texte_drawable"
+        android:ems="10"
+        android:hint="  Number Of Children"
+        android:inputType="number"
+        android:textColorHint="@color/white" />
+
+
+    <EditText
+        android:id="@+id/arrival"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@+id/child"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/texte_drawable"
+        android:hint="  Date Arrival"
+        android:textColor="#FFFFFFFF"
+        android:inputType="date"
+        android:textColorHint="@color/white"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/dep"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@+id/arrival"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/texte_drawable"
+        android:hint="  Date Departure"
+        android:inputType="date"
+        android:textColorHint="@color/white"
+        android:textColor="#FFFFFFFF"
+        android:textSize="20dp" />
+
+
+    <Button
+        android:id="@+id/rezvv"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dep"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/bot_drawable"
+        android:text="Book Now!" />
+
+
+</RelativeLayout>
+
+
+
+
+
+

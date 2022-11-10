@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ui.room.room">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <TextView
+            android:id="@+id/rooms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ROOMS"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/r2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/r11">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/im1"
+                android:layout_width="170dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="15dp"
+                >
+
+
+                <ImageView
+                    android:id="@+id/rooMM1"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/room1"
+                    ></ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/im2"
+                android:layout_width="170dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="16dp"
+                android:layout_toRightOf="@id/im1"
+                android:elevation="8dp"
+                app:cardCornerRadius="15dp">
+                <ImageView
+                    android:id="@+id/rooMM2"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/room2"
+                    ></ImageView>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/im3"
+                android:layout_width="170dp"
+                android:layout_height="120dp"
+                android:layout_below="@id/im1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="15dp"
+                >
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/room3"
+                    ></ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/im4"
+                android:layout_width="170dp"
+                android:layout_height="120dp"
+                android:layout_below="@id/im2"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="16dp"
+                android:layout_toEndOf="@+id/im3"
+                android:layout_toRightOf="@id/im2"
+                android:elevation="8dp"
+                app:cardCornerRadius="15dp">
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/room4"
+                    ></ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/im5"
+                android:layout_width="170dp"
+                android:layout_height="120dp"
+                android:layout_below="@id/im3"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="15dp"
+                >
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/room1"
+                    ></ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/im6"
+                android:layout_width="170dp"
+                android:layout_height="120dp"
+                android:layout_below="@id/im4"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="16dp"
+                android:layout_toEndOf="@+id/im5"
+                android:layout_toRightOf="@id/im5"
+                android:elevation="8dp"
+                app:cardCornerRadius="15dp">
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/room2"
+                    ></ImageView>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/im7"
+                android:layout_width="170dp"
+                android:layout_height="120dp"
+                android:layout_below="@id/im5"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="15dp"
+                >
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/room3"
+                    ></ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/im8"
+                android:layout_width="170dp"
+                android:layout_height="120dp"
+                android:layout_below="@id/im6"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="16dp"
+                android:layout_toEndOf="@+id/im7"
+                android:layout_toRightOf="@id/im7"
+                android:elevation="8dp"
+                app:cardCornerRadius="15dp">
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/room4"
+                    ></ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/im9"
+                android:layout_width="170dp"
+                android:layout_height="120dp"
+                android:layout_below="@id/im7"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="15dp"
+                >
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/room1"
+                    ></ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/im10"
+                android:layout_width="170dp"
+                android:layout_height="120dp"
+                android:layout_below="@id/im8"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="16dp"
+                android:layout_toEndOf="@+id/im9"
+                android:layout_toRightOf="@id/im9"
+                android:elevation="8dp"
+                app:cardCornerRadius="15dp">
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/room2"
+                    ></ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
