@@ -1,7 +1,7 @@
 package com.example.hotel;
 
 public class UsersClass {
-    String name, surname, email, phone, password;
+    private String name, surname, email, phone, password;
 
     public UsersClass(String name, String surname, String email, String phone, String password) {
         this.name = name;

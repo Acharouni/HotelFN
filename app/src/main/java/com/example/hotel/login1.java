@@ -37,6 +37,7 @@ public class login1 extends AppCompatActivity {
         fAuth = FirebaseAuth.getInstance();
         progressBar = findViewById(R.id.idprogressBar1);
         nUser = findViewById(R.id.Create);
+        home= findViewById(R.id.idhome1);
         nUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -47,7 +48,7 @@ public class login1 extends AppCompatActivity {
         });
 
 
-        home= findViewById(R.id.idhome1);
+
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

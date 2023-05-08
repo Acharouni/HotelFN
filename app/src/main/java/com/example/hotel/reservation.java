@@ -77,7 +77,7 @@ public class reservation extends AppCompatActivity {
                 Date_E = mdate_E.getText().toString().trim();
                 Date_D = mdate_D.getText().toString().trim();
                 EnregResV enregResV= new EnregResV(Fname, Fsubname, nameRoom, Fadult, Fchild, Date_E, Date_D);
-                FirebaseDatabase.getInstance().getReference("reservation").child(getnbr()).child(currentUserId).setValue(enregResV);
+                FirebaseDatabase.getInstance().getReference("reservation").child(currentUserId).setValue(enregResV);
 
                 if (TextUtils.isEmpty(Fadult)){
                     mAdult.setError("Veuillez entrer votre nbr adult");

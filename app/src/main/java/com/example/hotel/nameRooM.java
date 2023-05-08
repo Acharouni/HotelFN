@@ -1,7 +1,7 @@
 package com.example.hotel;
 
 public class nameRooM {
-    static String nameRoom;
+   private static String nameRoom;
 
     public nameRooM(String nameRoom){
         this.nameRoom=nameRoom;

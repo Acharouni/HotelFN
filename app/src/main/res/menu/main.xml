@@ -19,6 +19,11 @@
         android:orderInCategory="100"
         android:visible="false"
         app:showAsAction="never" />
+    <item android:id="@+id/myreservation"
+        android:title="@string/my_reservation"
+        android:orderInCategory="100"
+        android:visible="false"
+        app:showAsAction="never" />
     <item
         android:id="@+id/logout"
         android:icon="@drawable/ic_baseline_logout_24"

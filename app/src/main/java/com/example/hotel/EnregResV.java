@@ -1,7 +1,7 @@
 package com.example.hotel;
 
 public class EnregResV {
-    String name, subname, room, adult, child, Date_E, Date_D;
+    private String name, subname, room, adult, child, Date_E, Date_D;
 
     public EnregResV(String name, String subname, String room, String adult, String child, String date_E, String date_D) {
         this.name = name;

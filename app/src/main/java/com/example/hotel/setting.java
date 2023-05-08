@@ -24,6 +24,7 @@ public class setting extends AppCompatActivity {
     private EditText nameA, surnameA, mailA, phoneA, passwordA, cnpws;
     private Button btn_send;
     private View home;
+
     ProgressBar progressBar;
     FirebaseAuth fAuth;
     FirebaseDatabase rootNude;

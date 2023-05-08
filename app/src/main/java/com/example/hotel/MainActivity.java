@@ -73,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
         MenuItem id1 = menu.findItem(R.id.logout);
         MenuItem id2 = menu.findItem(R.id.action_settings);
         MenuItem id3 = menu.findItem(R.id.nameUser);
+        MenuItem id4 = menu.findItem(R.id.myreservation);
 
 
         if (fAuth.getCurrentUser() !=null) {
@@ -80,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
             id1.setVisible(true);
             id2.setVisible(true);
             id3.setVisible(true);
+            id4.setVisible(true);
 
             String currentUserId =fAuth.getInstance().getCurrentUser().getUid();
             DatabaseReference referance= FirebaseDatabase.getInstance().getReference().child("users")
@@ -120,6 +122,7 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
         int id1 = item.getItemId();
         int id3 = item.getItemId();
+        int id4 = item.getItemId();
         if (id == R.id.idLogin) {
 
             Intent intent= new Intent(MainActivity.this, login1.class);
@@ -140,7 +143,11 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "setting !!!.", Toast.LENGTH_SHORT).show();
             return true;
         }
-
+        if (id4 == R.id.myreservation) {
+            startActivity(new Intent(MainActivity.this, myreservation.class));
+            Toast.makeText(getApplicationContext(), "My reservation !!!.", Toast.LENGTH_SHORT).show();
+            return true;
+        }
 
 
         return false;

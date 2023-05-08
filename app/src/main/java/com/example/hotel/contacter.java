@@ -5,7 +5,7 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class contacter {
-    String mail, message, objet;
+    private String mail, message, objet;
 
     public contacter(String mail, String message, String objetA) {
         this.mail = mail;
